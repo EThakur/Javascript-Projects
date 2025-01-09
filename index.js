@@ -1,16 +1,16 @@
-const body = document.getElementsByTagName("body")[0];
+const input = document.getElementById("input")
 
-function setColor(name) {
-    body.style.backgroundColor = name;
+function reverseString(str){
+    return str.split("").reverse().join("")
 }
 
-setColor("pink");
 
-function randomColor() {
-    const red = Math.round(Math.random() *255)
-    const blue = Math.round(Math.random() *255)
-    const green = Math.round(Math.random() *255)
-    const color =`rgb(${red},  ${blue}, ${green})`
-    body.style.backgroundColor = color;
+function check() {
+    const value = input.value
+    const reverse =reverseString(Value)
+    alert(reverse)
+    if (value === reverse){
+        alert("PALINDROME")
+    }else
+       alert("Not Today!")
 }
-randomColor()
